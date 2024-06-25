@@ -4,6 +4,21 @@ import json
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def home():
+    routes = []
+    for rule in app.url_map.iter_rules():
+        routes.append({
+            'endpoint': rule.endpoint,
+            'methods': ','.join(rule.methods),
+            'url': str(rule)
+        })
+
+    return jsonify({
+        'message': 'Welcome in Server-2-OtakuTube!',
+        'routes': routes
+    })
+
 @app.route('/anime/<string:name>', methods=['GET'])
 def get_anime(name):
     print(f"Request received for anime: {name}")
