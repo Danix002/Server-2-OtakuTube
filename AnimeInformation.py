@@ -61,10 +61,7 @@ def search_anime(query):
     
 
 
-"""if __name__ == '__main__':
-    # Indirizzo IP e porta su cui eseguire il server Flask
-    ip_address = '192.168.1.7'  # Inserisci qui l'indirizzo IP desiderato
+if __name__ == '__main__':
+    ip_address = '0.0.0.0'
     port = 5000
-
-    # Esegui il server Flask specificando l'indirizzo IP e la porta
-    app.run(debug=True, host=ip_address, port=port)"""
+    app.run(debug=True, host=ip_address, port=port)
