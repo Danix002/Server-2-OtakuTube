@@ -1,6 +1,7 @@
 # Server-2-OtakuTube
 
 Welcome to Server-2-OtakuTube, a Flask-based API server that helps you find and search for anime information. This server uses the `animeworld` library to fetch anime data and provides several endpoints to interact with the anime database.
+This API is hosted on a server provided by Render, check it out: "https://server-2-otakutube.onrender.com". If the server becomes inactive or experiences issues, please contact the repository owners for assistance.
 
 ## Features
 
